@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.nav-bar-item, .nav-bar-item-active {
+  color: #1E1E1E;
+  font-family: Nunito, inherit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-right: 15px !important;
+}
+
+.nav-bar-item-active {
+  color: #B57850
+}
+
+.footer {
+  background-color: #18253C;
+}
+
+.footer-copyright {
+  color: #CFCFCF;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.205px;
+}
+
+.footer-info {
+  color: var(--Bg2, #F3F3F3);
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-navigation {
+  color: #F3F3F3;
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.108px;
+  text-transform: uppercase;
+}
+
+.sidebar-nav, .sidebar-nav-active {
+  color: var(--Body, #858585);
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.sidebar-nav-active {
+  color: #B57850
+}
+
+.sidebar-heading {
+  color: var(--Title, #1E1E1E);
+  font-family: Bitter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 2.8px;
+}
+
+.artifacts {
+  background-color: #f4f4f4
+}
+
+.sidebar-filter-heading {
+  color: var(--Title, #1E1E1E);
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.surprise {
+  color: var(--Primary-1, #B57A50);
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.12px;
+  text-transform: uppercase;
+}

@@ -23,7 +23,7 @@ const CardContent: React.FunctionComponent = () => {
             if (idx % 3 == 1) color = "#D9E5E2";
             else if (idx % 3 == 2) color = "#CCD5E4";
             else color = "#DE9C6D66";
-            return <Card data={elem} color={color} />;
+            return <Card key={idx} data={elem} color={color} />;
           }
         })}
       </div>
